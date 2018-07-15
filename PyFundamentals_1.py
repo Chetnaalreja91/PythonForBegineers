@@ -41,4 +41,4 @@ print("Python is " + x)
 #strings indixes
 fruit='banana'
 x=len(fruit)
-print(x)  3output6
+print(x)  #output6
