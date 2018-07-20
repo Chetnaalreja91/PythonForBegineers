@@ -1,0 +1,31 @@
+fruit='banana'
+print(len(fruit))
+for letter in'banana'
+	print(letter)
+
+#while loop
+
+fruit='banana'
+index=0
+while index<len(fruit):
+        letter=fruit[index]
+	print(index,letter)
+	index=index+1
+
+#determinent loop
+fruit='banana'
+for letter in fruit:
+  print(letter)
+
+Fruit='banana'
+'n' in fruit
+if 'a' in fruit:
+	print('found it!')
+
+#functions
+greet='Hello bob'
+Zap=greet.lower()
+print(Zap)
+print('Hi There'.lower())
+
+dir(stuff)
