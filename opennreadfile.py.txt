@@ -1,0 +1,55 @@
+handle=open(filename,mode)
+fhand=opne('mbox.txt',r)
+
+fhand(open('mbox.txt')
+pint(fhand)
+
+stuff='Hello\nWorld!'
+print(stuff)
+
+#\n new line is one charater not two newlines are whitespace
+Reading through the files as a sequence of the strings
+xfile= open('mbox.txt')
+for cheese in xfile:
+    print(chesse)
+
+#counting the lines in file
+fhand=open('mbox.txt')
+count=0
+for line in fhand:
+    count=count+1
+print('line count:',count)
+
+#with read() it reads the whole while
+>>>fhand=open('mbox-short.txt')
+>>>inp=fhand.read()
+>>>print(len(inp))
+>>>Print(inp[:20])
+
+#Searching Through a File 
+fhand=opne('mbox-short.txt')
+for line in fhand:
+	line=line.rstrip() #rstrip is the function that helps eliminate whitespaces, here its newline
+	if line.startswith('From') :
+           print(line)
+#skipping with continue
+fhand=opne('mbox-short.txt')
+for line in fhand:
+	line=line.rstrip() #rstrip is the function that helps eliminate whitespaces, here its newline
+	if not line.startswith('From') :
+	    continue
+        print(line)
+
+#badfilenames when the user input bad fname
+fname=input('enter the file name: ')
+try: 
+   fhand=opne(fname)
+except:
+   print('File cannot be opened:', fname)
+   quit()
+
+count=0
+for line in fhand:
+    if line.startswith('Subject:') :
+       count=count+1
+print('There were', count, 'subject lines in', fname)
