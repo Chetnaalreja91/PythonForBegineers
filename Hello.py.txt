@@ -1,0 +1,27 @@
+#This program says hello and asks for my name
+print('hello world!)
+print('what is your name?') #ask for their name 
+myName = input()
+print('It is good to meet you, ' + myName)
+print('The length of your name is:')
+print(len(myName))
+print('what is your age?') #ask for their age
+myAge= input()
+print('You will be ' + str(int(myAge) + 1) + ' in a year.')
+
+#elseandelif statements
+print('Enter a name.')
+name=input()
+if name:
+   print('Thnak You for entering a name.')
+else:
+   print('You did not enter a name.')
+
+#modified the above with bool 
+
+print('Enter a name.')
+name=input()
+if name !='':
+   print('Thnak You for entering a name.')
+else:
+   print('You did not enter a name.')
