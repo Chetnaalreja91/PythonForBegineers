@@ -1,0 +1,47 @@
+
+Sorce: https://www.afterhoursprogramming.com/tutorial/python/reading-files/
+
+I am a test file.
+Maybe someday, he will promote me to a real file.
+Man, I long to be a real file
+and hang out with all my new real file friends
+
+-----------------------------------------------------
+f = open("test.txt", "r") #opens file with name of "test.txt"
+-----------------------------------------------------------------
+f = open("test.txt","r") #opens file with name of "test.txt"
+print(f.read(1))
+print(f.read())
+
+#output
+I
+ am a test file.
+Maybe someday, he will promote me to a real file.
+Man, I long to be a real file
+and hang out with all my new real file friends.
+-------------------------------------------------------------
+f = open("test.txt","r") #opens file with name of "test.txt"
+print(f.readline())
+print(f.readline())
+
+Output 
+I am a test file.
+Maybe someday, he will promote me to a real file.
+Ha! This time we were prepared for Python’s trickery. Since we just used
+ the readline() method twice, we knew that we would get first 2 lines because of
+Python’s reading process. Of course, we also knew that readline() reads only a line 
+because of it’s simple syntax. Alright, one last important, 
+complicated, and awesome thing about Python’s reading abilities.
+--------------------------------------------------------------
+f = open("test.txt","r") #opens file with name of "test.txt"
+myList = []
+for line in f:
+    myList.append(line)
+print(myList)
+---------------------------------------------------------------
+f = open("test.txt","r") #opens file with name of "test.txt"
+print(f.read(1))
+print(f.read())
+f.close()
+It is always good practice to close files, your memory will thank you. 
+Next, let’s do some construction by writing to files.

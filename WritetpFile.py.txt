@@ -1,0 +1,25 @@
+https://www.afterhoursprogramming.com/tutorial/python/writing-to-files/
+
+
+f = open("test.txt","w") #opens file with name of "test.txt"
+f.close()
+
+'''
+…And whoops! There goes our content. As I said, we are in dangerous water here friends. 
+As soon as you place “w” as the second argument, you are basically telling Python to 
+nuke the current file. Now that we have nuked our file, let’s try rebuilding it.
+'''
+
+f = open("test.txt","w") #opens file with name of "test.txt"
+f.write("I am a test file.")
+f.write("Maybe someday, he will promote me to a real file.")
+f.write("Man, I long to be a real file")
+f.write("and hang out with all my new real file friends.")
+f.close()
+
+
+
+f.write("Maybe someday, he will promote me to a real file.\n")
+f = open("test.txt","a") #opens file with name of "test.txt"
+f.write("and can I get some pickles on that")
+f.close()
